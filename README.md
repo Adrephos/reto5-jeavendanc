@@ -25,21 +25,21 @@ git clone git@github.com:st0263eafit/st0263-241.git
 cd st0263-241/bigdata/datasets/
 ```
 
-### 3. Subir archivos al cluster
+### 2. Subir archivos al cluster
 Para subir los archivos al cluster uso scp y me conecto al cluster de Amazon EMR:
 ![Subir archivos al cluster](./images/copy_with_scp.png)
 
 Así se ven los archivos en el cluster:
 ![Archivos en el cluster](./images/data_in_cluster.png)
 
-### 4. Copiar archivos a HDFS
+### 3. Copiar archivos a HDFS
 Para copiar los archivos a HDFS uso el comando `hdfs dfs -copyFromLocal` de la siguiente manera:
 ![Copiar archivos a HDFS](./images/copy_from_local.png)
 
 Tambien podemos verificar la existencia de los archivos usando HUE:
 ![Archivos en HDFS](./images/data_hdfs_hue.png)
 
-### 5. Copiar archivos a S3
+### 4. Copiar archivos a S3
 Para copiar los archivos a S3 uso el comando `hadoop distcp` de la siguiente manera:
 ![Copiar archivos a S3](./images/to_s3_1.png)
 ![Copiar archivos a S3](./images/to_s3_2.png)
